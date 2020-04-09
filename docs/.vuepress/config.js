@@ -69,6 +69,16 @@ module.exports = {
                   frontmatter: { key: "ECMAScript6" }
                 },
                 {
+                  text: "Cesium",
+                  icon: "",
+                  frontmatter: { key: "Cesium" }
+                },
+                {
+                  text: "Framework",
+                  icon: "",
+                  frontmatter: { key: "Framework" }
+                },
+                {
                   text: "Vue",
                   icon: "",
                   frontmatter: { key: "Vue" }
@@ -77,6 +87,26 @@ module.exports = {
                   text: "React",
                   icon: "",
                   frontmatter: { key: "React" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          text: "操作系统",
+          icon: "",
+          frontmatter: { id: "os" }, // 通过这种方式进行分组设置
+          open: false,
+          items: [
+            {
+              text: "Linux",
+              icon: "",
+              frontmatter: { key: "Linux" },
+              items: [
+                {
+                  text: "Https",
+                  icon: "",
+                  frontmatter: { key: "Https" }
                 }
               ]
             }
@@ -168,6 +198,11 @@ module.exports = {
             id: "language",
             keys: ["language"],
             path: "/language/"
+          },
+          {
+            id: "os",
+            keys: ["os"],
+            path: "/os/"
           }
         ]
       }
