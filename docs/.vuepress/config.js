@@ -55,6 +55,11 @@ module.exports = {
                   text: "SpringCloud",
                   icon: "",
                   frontmatter: { key: "SpringCloud" }
+                },
+                {
+                  text: "OPC",
+                  icon: "",
+                  frontmatter: { key: "OPC" }
                 }
               ]
             },
