@@ -3,7 +3,7 @@ module.exports = {
   title: "Narrow road meet, code revere win.",
   // 博客描述
   description: "码,需清心寡欲",
-  theme: require.resolve("vuepress-theme-ic/theme/"),
+  theme: 'ic/theme',//require.resolve("vuepress-theme-ic/theme/"),
   themeConfig: {
     // 设置logo
     logo: "/ikangxu.jpg",
@@ -96,6 +96,15 @@ module.exports = {
               ]
             }
           ]
+        },
+        {
+          text: "开源", // 左侧栏名称
+          icon: "",
+          frontmatter: {
+            // 指定frontmatter内容
+            id: "other", // 指向vuepress-plugin-blog中的frontmatter
+            key: "open" // Markdown中的frontmatter配置的categories值
+          }
         },
         {
           text: "操作系统",
